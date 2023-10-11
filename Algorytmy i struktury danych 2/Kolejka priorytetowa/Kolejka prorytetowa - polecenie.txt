@@ -1,0 +1,11 @@
+Proszę zaimplementować kolejkę priorytetową za pomocą kopca binarnego.
+
+Założenie dla ułatwienia:
+
+- Kolejka ma przechowywać int-y
+
+UWAGA: 
+
+-w tym przypadku plik nagłówkowy jest dodany pomocniczo, można stosować inne nazwy metod
+
+-gorąco zachęcam do przygotowania metody main, w której kolejka byłaby przetestowana

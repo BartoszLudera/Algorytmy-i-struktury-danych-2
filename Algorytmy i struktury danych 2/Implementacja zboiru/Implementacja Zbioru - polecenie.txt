@@ -1,0 +1,3 @@
+Proszę o implementację zbioru obowiązkowo przy użyciu tablicy oraz listy.  Osoby chętne proszę dodatkowo o implementację za pomocą drzewa BST (gorąco zachęcam).
+
+Zbiór powinien być zaimplementowany w osobnej klasie. Dla ułatwienia, do zadania dołączam dwa pliki nagłówkowe, które wskazują metody, jakie muszą być zaimplementowane.

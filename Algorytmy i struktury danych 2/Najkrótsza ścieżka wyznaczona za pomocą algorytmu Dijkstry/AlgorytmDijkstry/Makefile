@@ -1,0 +1,30 @@
+CC = g++
+CFLAGS = 
+
+EDGE_NAME = edge
+EDGE_SOURCE = $(EDGE_NAME).cpp
+EDGE_TARGET = $(EDGE_NAME).o
+EDGE_HEADER = $(EDGE_NAME).h
+
+MYLIST_NAME = algorytmDijkstry
+MYLIST_SOURCE = $(MYLIST_NAME).cpp
+MYLIST_TARGET = $(MYLIST_NAME).out
+MYLIST_DEPENDS = $(MYLIST_SOURCE) $(EDGE_TARGET) $(EDGE_HEADER)
+
+TARGETS = $(MYLIST_TARGET) 
+
+%.out: %.cpp
+	$(CC) $(CFLAGS) $^ -o $@
+
+$(MYLIST_TARGET): $(MYLIST_DEPENDS)
+	$(CC) $(CFLAGS) $^ -o $@
+
+all: $(TARGETS)
+
+run: $(TARGETS)
+		./$(TARGETS)
+
+.PHONY: clean
+
+clean:
+	$(RM) $(TARGETS) *.o core
